@@ -1,0 +1,27 @@
+
+# Entorno virtual
+venv/
+.venv/
+
+# Variables de entorno — NUNCA subir
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Base de datos SQLite local
+*.db
+*.sqlite3
+
+# Archivos generados
+app/static/barcodes/
+app/static/etiquetas/
+
+# VS Code
+.vscode/
+
+# Mac
+.DS_Store
+

@@ -1,16 +1,13 @@
-
-
 from flask import Flask
 
 
-print("hello world Empezando...")
 
-
-
+print("hello world")
 def create_app():
     app = Flask(__name__)
+    app.config.from_pyfile('../config.py')
 
-    from .routes.main import main
-    app.register_blueprint(main)
+    from .routes.auth import auth_bp
+    app.register_blueprint(auth_bp)
 
     return app
